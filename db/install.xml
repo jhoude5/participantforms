@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="local/participantforms/db" VERSION="20210916" COMMENT="XMLDB file for Moodle local/participantforms"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
+>
+  <TABLES>
+    <TABLE NAME="local_participantforms_agree" COMMENT="Participant agreement form">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+        <FIELD NAME="who" TYPE="char" LENGTH="100" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="assemble" TYPE="int" LENGTH="4" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="communicate" TYPE="int" LENGTH="4" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="identify" TYPE="int" LENGTH="4" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="implement" TYPE="int" LENGTH="4" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="provide" TYPE="int" LENGTH="4" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="complete" TYPE="int" LENGTH="4" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="program" TYPE="int" LENGTH="4" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="community" TYPE="int" LENGTH="4" NOTNULL="false" SEQUENCE="false"/>
+        <FIELD NAME="userid" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false"/>
+          </FIELDS>
+          <KEYS>
+            <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+          </KEYS>
+        </TABLE>
+        <TABLE NAME="local_participantforms_info" COMMENT="Participant information form">
+          <FIELDS>
+            <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+            <FIELD NAME="who" TYPE="char" LENGTH="50" NOTNULL="false" SEQUENCE="false"/>
+            <FIELD NAME="programname" TYPE="char" LENGTH="100" NOTNULL="false" SEQUENCE="false"/>
+            <FIELD NAME="programname2" TYPE="char" LENGTH="100" NOTNULL="false" SEQUENCE="false"/>
+            <FIELD NAME="abe" TYPE="char" LENGTH="100" NOTNULL="false" SEQUENCE="false"/>
+            <FIELD NAME="abe2" TYPE="char" LENGTH="100" NOTNULL="false" SEQUENCE="false"/>
+            <FIELD NAME="abe3" TYPE="char" LENGTH="100" NOTNULL="false" SEQUENCE="false"/>
+            <FIELD NAME="esl" TYPE="char" LENGTH="100" NOTNULL="false" SEQUENCE="false"/>
+            <FIELD NAME="esl2" TYPE="char" LENGTH="100" NOTNULL="false" SEQUENCE="false"/>
+            <FIELD NAME="esl3" TYPE="char" LENGTH="100" NOTNULL="false" SEQUENCE="false"/>
+            <FIELD NAME="teachers" TYPE="char" LENGTH="100" NOTNULL="false" SEQUENCE="false"/>
+            <FIELD NAME="teachers2" TYPE="char" LENGTH="100" NOTNULL="false" SEQUENCE="false"/>
+            <FIELD NAME="teachers3" TYPE="char" LENGTH="100" NOTNULL="false" SEQUENCE="false"/>
+            <FIELD NAME="volunteers" TYPE="char" LENGTH="100" NOTNULL="false" SEQUENCE="false"/>
+            <FIELD NAME="volunteers2" TYPE="char" LENGTH="100" NOTNULL="false" SEQUENCE="false"/>
+            <FIELD NAME="volunteers3" TYPE="char" LENGTH="100" NOTNULL="false" SEQUENCE="false"/>
+            <FIELD NAME="instruct_aides" TYPE="char" LENGTH="100" NOTNULL="false" SEQUENCE="false"/>
+            <FIELD NAME="site" TYPE="char" LENGTH="100" NOTNULL="false" SEQUENCE="false"/>
+            <FIELD NAME="site1" TYPE="char" LENGTH="100" NOTNULL="false" SEQUENCE="false"/>
+            <FIELD NAME="evidence_based" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false"/>
+            <FIELD NAME="evidence_based1" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false"/>
+            <FIELD NAME="evidence_based2" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false"/>
+            <FIELD NAME="time" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false"/>
+            <FIELD NAME="student_esol" TYPE="char" LENGTH="100" NOTNULL="false" SEQUENCE="false"/>
+            <FIELD NAME="student_abe" TYPE="char" LENGTH="100" NOTNULL="false" SEQUENCE="false"/>
+            <FIELD NAME="begin_abe" TYPE="char" LENGTH="100" NOTNULL="false" SEQUENCE="false"/>
+            <FIELD NAME="int_abe" TYPE="char" LENGTH="100" NOTNULL="false" SEQUENCE="false"/>
+            <FIELD NAME="adv_abe" TYPE="char" LENGTH="100" NOTNULL="false" SEQUENCE="false"/>
+            <FIELD NAME="begin_esol" TYPE="char" LENGTH="100" NOTNULL="false" SEQUENCE="false"/>
+            <FIELD NAME="int_esol" TYPE="char" LENGTH="100" NOTNULL="false" SEQUENCE="false"/>
+            <FIELD NAME="adv_esol" TYPE="char" LENGTH="100" NOTNULL="false" SEQUENCE="false"/>
+            <FIELD NAME="min_alloted" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false"/>
+            <FIELD NAME="num_classes" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false"/>
+            <FIELD NAME="assigned" TYPE="char" LENGTH="100" NOTNULL="false" SEQUENCE="false"/>
+            <FIELD NAME="enrolled" TYPE="char" LENGTH="100" NOTNULL="false" SEQUENCE="false"/>
+            <FIELD NAME="classes" TYPE="char" LENGTH="100" NOTNULL="false" SEQUENCE="false"/>
+            <FIELD NAME="assess" TYPE="text" NOTNULL="false" SEQUENCE="false"/>
+            <FIELD NAME="jobtitle" TYPE="char" LENGTH="100" NOTNULL="false" SEQUENCE="false"/>
+            <FIELD NAME="funded" TYPE="text" NOTNULL="false" SEQUENCE="false"/>
+            <FIELD NAME="dev_system" TYPE="text" NOTNULL="false" SEQUENCE="false"/>
+            <FIELD NAME="current_opp" TYPE="text" NOTNULL="false" SEQUENCE="false"/>
+            <FIELD NAME="userid" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false"/>
+            <FIELD NAME="assess2" TYPE="text" NOTNULL="false" SEQUENCE="false"/>
+          </FIELDS>
+          <KEYS>
+            <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+          </KEYS>
+        </TABLE>
+  </TABLES>
+</XMLDB>

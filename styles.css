@@ -1,0 +1,11 @@
+.agree, .information {
+    display: none;
+}
+
+.agree.show, .information.show {
+    display: block;
+}
+
+#page-local-participantforms-agreementform label.form-check-inline {
+    display: block;
+}
